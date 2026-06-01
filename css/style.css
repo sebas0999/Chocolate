@@ -167,46 +167,21 @@ ul{
 
 .banner{
     margin-top:110px;
-
     min-height:80vh;
-
     background:
     linear-gradient(rgba(0,0,0,.35),rgba(0,0,0,.35)),
     url('../images/imgsPage/fotoSeparadora1.jpeg');
-
     background-size:cover;
     background-position:center;
-
     display:flex;
     align-items:center;
 }
 
 .content-banner{
     max-width:1200px;
-    margin:auto;
-    padding:40px;
+    margin: 90px;
+    padding:0;
     color:white;
-}
-
-.content-banner p{
-    font-size:18px;
-    letter-spacing:3px;
-}
-
-.content-banner h2{
-    font-size:4rem;
-    margin:15px 0;
-}
-
-.content-banner a{
-    display:inline-block;
-
-    background:var(--gold);
-    color:white;
-
-    padding:15px 30px;
-
-    border-radius:40px;
 }
 
 /* ********************************** */
