@@ -167,21 +167,17 @@ ul{
 
 .banner{
     margin-top:110px;
-    min-height:80vh;
-    background:
-    linear-gradient(rgba(0,0,0,.35),rgba(0,0,0,.35)),
-    url('../images/imgsPage/fotoSeparadora1.jpeg');
-    background-size:cover;
-    background-position:center;
+    background:#ffffff;
     display:flex;
+    justify-content:center;
     align-items:center;
 }
 
-.content-banner{
-    max-width:1200px;
-    margin: 90px;
-    padding:0;
-    color:white;
+.banner img{
+    width:100%;
+    max-width:2050px;
+    height:auto;
+    border-radius:4px;
 }
 
 /* ********************************** */
@@ -445,14 +441,32 @@ ul{
         grid-template-columns:1fr;
     }
 
-    .content-banner h2{
-        font-size:3rem;
-    }
 }
 
-/* ********************************** */
-/*           CONTACTANOS              */
-/* ********************************** */
+/* Responisve de BANNER */
+
+/* MÓVILES */
+@media (max-width:768px){
+
+    .banner{
+        margin-top:90px;
+        min-height:27vh;
+        background-size:cover;
+
+        /* mueve el foco hacia el centro-izquierda */
+        background-position:60% center;
+    }
+
+    .content-banner{
+        margin:30px;
+        max-width:1px;
+    }
+
+}
+
+/* ******************************************* */
+/*          PAGINA DE CONTACTANOS              */
+/* ******************************************* */
 
 /* ===== CONTACTO ===== */
 
@@ -662,4 +676,610 @@ ul{
     .info-contac p{
         font-size:1rem;
     }
+}
+
+/* ********************************** */
+/*          Quienes Somos             */
+/* ********************************** */
+
+/* =====================================
+   QUIÉNES SOMOS
+===================================== */
+
+.about-container{
+    max-width:1200px;
+    margin:auto;
+    padding:0 20px;
+}
+
+/* =====================================
+   PRESENTACIÓN
+===================================== */
+
+.first-section{
+    padding:180px 0 100px;
+}
+
+.about-title{
+    text-align:center;
+    font-size:3.5rem;
+    color:#8B5E3C;
+    margin-bottom:60px;
+}
+
+.about-text{
+    max-width:900px;
+    margin:auto;
+}
+
+.about-text p{
+    font-size:1.1rem;
+    line-height:2;
+    margin-bottom:25px;
+    color:#555;
+}
+
+.about-text strong{
+    color:#8B5E3C;
+}
+
+/* =====================================
+   GALERÍA
+===================================== */
+
+/* .gallery-section{
+    padding:80px 0;
+}
+
+.gallery-section h2{
+    text-align:center;
+    color:#8B5E3C;
+    font-size:2.5rem;
+    margin-bottom:50px;
+}
+
+.gallery{
+    display:grid;
+
+    grid-template-columns:
+        repeat(4,1fr);
+
+    grid-template-rows:
+        250px 250px;
+
+    gap:20px;
+}
+
+.gallery img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+
+    border-radius:15px;
+
+    transition:.4s;
+}
+
+.gallery img:hover{
+    transform:scale(1.03);
+}
+
+.gallery-img-1{
+    grid-column:1/3;
+    grid-row:1/3;
+}
+
+.gallery-img-2{
+    grid-column:3/4;
+}
+
+.gallery-img-3{
+    grid-column:4/5;
+}
+
+.gallery-img-4{
+    grid-column:3/4;
+}
+
+.gallery-img-5{
+    grid-column:4/5;
+} */
+
+/* =====================================
+   POR QUÉ ELEGIRNOS
+===================================== */
+
+.why-us{
+    background:#F8F4EE;
+    padding:100px 0;
+}
+
+.why-us h2{
+    text-align:center;
+    color:#8B5E3C;
+    font-size:2.8rem;
+    margin-bottom:70px;
+}
+
+.why-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:40px;
+}
+
+.why-card{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    text-align:center;
+}
+
+.why-card img{
+    width:80px;
+    height:80px;
+    object-fit:contain;
+
+    /* altura fija para que todos arranquen igual */
+    margin-bottom:25px;
+}
+
+.why-card h3{
+    color:#8B5E3C;
+    font-size:1.6rem;
+
+    margin-bottom:15px;
+
+    /* misma altura para todos los títulos */
+    min-height:40px;
+}
+
+.why-card p{
+    color:#555;
+    line-height:1.8;
+    max-width:300px;
+}
+
+/* =====================================
+   UBICACIÓN
+===================================== */
+
+.location-section{
+    padding:100px 0;
+}
+
+.location-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:50px;
+    align-items:center;
+}
+
+.location-info span{
+    color:#C9A15B;
+    letter-spacing:2px;
+    font-size:.85rem;
+}
+
+.location-info h2{
+    font-size:2.5rem;
+    color:#8B5E3C;
+    margin:15px 0 25px;
+}
+
+.location-info p{
+    color:#555;
+    line-height:1.8;
+}
+
+.location-item{
+    display:flex;
+    gap:15px;
+    margin-top:20px;
+}
+
+.location-item i{
+    color:#C9A15B;
+    margin-top:4px;
+}
+
+.location-map iframe{
+    width:100%;
+    height:420px;
+    border:none;
+    border-radius:15px;
+    box-shadow:0 5px 20px rgba(0,0,0,.12);
+}
+
+/* =====================================
+   RESPONSIVE
+===================================== */
+
+@media(max-width:992px){
+
+    .why-card p{
+        max-width:500px;
+    }
+}
+
+@media(max-width:992px){
+
+    .gallery{
+        grid-template-columns:1fr;
+        grid-template-rows:auto;
+    }
+
+    .gallery img{
+        height:250px;
+    }
+
+    .gallery-img-1,
+    .gallery-img-2,
+    .gallery-img-3,
+    .gallery-img-4,
+    .gallery-img-5{
+        grid-column:auto;
+        grid-row:auto;
+    }
+
+    .why-grid{
+        grid-template-columns:1fr;
+        gap:60px;
+    }
+
+    .location-grid{
+        grid-template-columns:1fr;
+    }
+
+    .location-map iframe{
+        height:350px;
+    }
+}
+
+@media(max-width:768px){
+
+    .about-title{
+        font-size:2.7rem;
+    }
+
+    .gallery-section h2,
+    .why-us h2,
+    .location-info h2{
+        font-size:2rem;
+    }
+}
+
+@media(max-width:576px){
+
+    .first-section{
+        padding-top:140px;
+    }
+
+    .about-title{
+        font-size:2.2rem;
+    }
+
+    .about-text p{
+        font-size:1rem;
+    }
+
+    .gallery img{
+        height:220px;
+    }
+
+    .location-map iframe{
+        height:280px;
+    }
+}
+
+
+/* ==========================
+   !INICIAR SESION
+==========================*/
+
+.login-page{
+    min-height:100vh;
+
+    background:
+    linear-gradient(
+        rgba(190, 190, 190, 0.363),
+        rgba(94, 94, 94, 0.199)
+    ),
+    url('../images/imgsPage/fotoSeparadora1.jpeg');
+
+    background-size:cover;
+    background-position:center;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    padding:30px;
+    position:relative;
+}
+
+/* ==========================
+   VOLVER
+========================== */
+
+.btn-back{
+    position:absolute;
+    top:30px;
+    left:30px;
+
+    display:flex;
+    align-items:center;
+    gap:10px;
+
+    padding:12px 20px;
+
+    background:#fff;
+    color:var(--primary);
+
+    text-decoration:none;
+    font-weight:600;
+
+    border:2px solid var(--primary);
+    border-radius:50px;
+
+    box-shadow:0 4px 12px rgba(0,0,0,.08);
+
+    transition:all .3s ease;
+}
+
+.btn-back:hover{
+    background:var(--primary);
+    color:#fff;
+
+    transform:translateY(-2px);
+
+    box-shadow:0 8px 20px rgba(139,94,60,.25);
+}
+
+.btn-back i{
+    font-size:14px;
+}
+/* ==========================
+   CARD LOGIN
+========================== */
+
+.login-container{
+    width:100%;
+    max-width:500px;
+
+    background:#fff;
+
+    padding:40px;
+
+    border-radius:20px;
+
+    border:1px solid #eee;
+
+    box-shadow:
+    0 15px 35px rgba(0,0,0,.10);
+}
+
+/* ==========================
+   LOGO
+========================== */
+
+.login-logo{
+    text-align:center;
+    margin-bottom:20px;
+}
+
+.login-logo img{
+    width:120px;
+}
+
+/* ==========================
+   HEADER
+========================== */
+
+.login-header{
+    text-align:center;
+    margin-bottom:35px;
+}
+
+.login-header h1{
+    color:var(--primary);
+    margin-bottom:12px;
+}
+
+.login-header span{
+    color:var(--secondary);
+}
+
+.login-header p{
+    color:#666;
+    line-height:1.7;
+}
+
+/* ==========================
+   FORM
+========================== */
+
+.login-form{
+    display:flex;
+    flex-direction:column;
+    gap:25px;
+}
+
+.input-group{
+    display:flex;
+    flex-direction:column;
+    gap:8px;
+}
+
+.input-group label{
+    font-weight:600;
+    color:var(--primary);
+}
+
+.input-wrapper{
+    position:relative;
+}
+
+.input-wrapper i{
+    position:absolute;
+    left:15px;
+    top:50%;
+    transform:translateY(-50%);
+    color:var(--primary);
+}
+
+.input-wrapper input{
+    width:100%;
+    padding:14px 15px 14px 45px;
+
+    border:1px solid #ddd;
+    border-radius:10px;
+
+    outline:none;
+}
+
+.input-wrapper input:focus{
+    border-color:var(--secondary);
+}
+
+/* ==========================
+   OPCIONES
+========================== */
+
+.form-options{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.remember-me{
+    display:flex;
+    align-items:center;
+    gap:8px;
+}
+
+.forgot-password{
+    text-decoration:none;
+    color:var(--primary);
+    font-weight:600;
+}
+
+/* ==========================
+   BOTÓN
+========================== */
+
+.boton-login{
+    border:none;
+
+    padding:15px;
+
+    border-radius:12px;
+
+    background:var(--primary);
+    color:#fff;
+
+    font-weight:600;
+    cursor:pointer;
+
+    transition:.3s;
+}
+
+.boton-login:hover{
+    background:#6f492d;
+}
+
+/* ==========================
+   FOOTER LOGIN
+========================== */
+
+.login-footer{
+    margin-top:25px;
+    text-align:center;
+}
+
+.login-footer a{
+    color:var(--primary);
+    font-weight:600;
+    text-decoration:none;
+}
+
+/* ==========================
+   ! REGISTRO
+========================== */
+
+.checkbox-group{
+    margin-top:-10px;
+}
+
+.checkbox-label{
+    display:flex;
+    align-items:flex-start;
+    gap:10px;
+
+    font-size:.95rem;
+    color:#555;
+
+    line-height:1.6;
+}
+
+.checkbox-label input{
+    margin-top:4px;
+    accent-color:var(--primary);
+}
+
+.checkbox-label a{
+    color:var(--primary);
+    text-decoration:none;
+    font-weight:600;
+}
+
+.checkbox-label a:hover{
+    text-decoration:underline;
+}
+
+/* ==========================
+   AJUSTE REGISTRO
+========================== */
+
+.login-container.register-container{
+    max-width:550px;
+}
+
+/* ==========================
+   RESPONSIVE
+========================== */
+
+@media(max-width:576px){
+
+    .checkbox-label{
+        font-size:.9rem;
+    }
+
+}
+
+/* ==========================
+   RESPONSIVE
+========================== */
+
+@media(max-width:576px){
+
+    .login-page{
+        padding:20px;
+    }
+
+    .btn-back{
+        top:20px;
+        left:20px;
+        font-size:.9rem;
+    }
+
+    .login-container{
+        padding:25px;
+    }
+
+    .form-options{
+        flex-direction:column;
+        align-items:flex-start;
+        gap:10px;
+    }
+
 }
