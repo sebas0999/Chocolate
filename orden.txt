@@ -1,0 +1,12 @@
+1. Frontend terminado
+2. Modelo relacional terminado
+3. MySQL
+4. PHP básico
+5. Login y Registro
+6. CRUD Productos
+7. Carrito
+8. Pedidos
+9. Pagos
+10. Dashboard
+11. Exportación Excel
+12. Refactorizar a MVC completo

@@ -1,0 +1,215 @@
+/* ==========================
+   CONTENEDOR GENERAL
+========================== */
+
+.products-section{
+    max-width:1400px;
+    margin:80px auto;
+    padding:0 20px;
+}
+
+/* ==========================
+   TITULO
+========================== */
+
+.products-header{
+    margin-bottom:30px;
+}
+
+.products-header h2{
+    padding: 30px;
+    color:#6b4423;
+    text-transform:uppercase;
+}
+
+/* ==========================
+   BUSCADOR
+========================== */
+
+.search-container{
+    display:flex;
+    margin-bottom:30px;
+}
+
+.search-container input{
+    flex:1;
+    border:none;
+    background:#f3f3f3;
+    padding:15px;
+    font-size:1rem;
+    outline:none;
+}
+
+.search-container button{
+    width:60px;
+    border:none;
+    cursor:pointer;
+    background:#c4a562;
+    color:white;
+    font-size:18px;
+}
+
+/* ==========================
+   CATEGORIAS
+========================== */
+
+.categories{
+    display:flex;
+    gap:15px;
+    flex-wrap:wrap;
+    margin-bottom:40px;
+}
+
+.category-btn{
+    border:none;
+    padding:12px 20px;
+    border-radius:25px;
+    cursor:pointer;
+
+    background:#ece6dc;
+    color:#6b4423;
+
+    font-weight:600;
+}
+
+.category-btn.active{
+    background:#8B5E3C;
+    color:white;
+}
+
+/* ==========================
+   GRID PRODUCTOS
+========================== */
+
+.products-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:30px;
+}
+
+/* ==========================
+   CARD
+========================== */
+
+.product-card{
+    position:relative;
+    text-align:center;
+}
+
+.product-card img{
+    width:100%;
+    aspect-ratio:1/1;
+    object-fit:cover;
+}
+
+/* ==========================
+   OFERTA
+========================== */
+
+.offer-badge{
+    position:absolute;
+    top:15px;
+    right:15px;
+
+    background:#c0392b;
+    color:white;
+
+    padding:10px 12px;
+    border-radius:20px;
+
+    font-size:.85rem;
+    font-weight:600;
+}
+
+/* ==========================
+   NOMBRE
+========================== */
+
+.product-card h3{
+    margin-top:15px;
+    color:#6b4423;
+    font-size:1.2rem;
+}
+
+/* ==========================
+   PRECIO
+========================== */
+
+.product-price{
+    margin:15px 0;
+    font-size:1.1rem;
+    font-weight:700;
+    color:#333;
+}
+
+/* ==========================
+   BOTON
+========================== */
+
+.product-btn{
+    width:100%;
+
+    border:none;
+    cursor:pointer;
+
+    background:#c4a562;
+    color:white;
+
+    padding:14px;
+    border-radius:5px;
+
+    font-size:1rem;
+    font-weight:600;
+
+    transition:.3s;
+}
+
+.product-btn:hover{
+    background:#8B5E3C;
+}
+
+/* ==========================
+   TABLET
+========================== */
+
+@media(max-width:992px){
+
+    .products-grid{
+        grid-template-columns:repeat(3,1fr);
+    }
+
+}
+/* ==========================
+   MOVIL
+========================== */
+
+@media(max-width:576px){
+
+    .products-header h2{
+        font-size:2.2rem;
+    }
+
+    .products-grid{
+        grid-template-columns:repeat(2,1fr);
+        gap:15px;
+    }
+
+    .product-card h3{
+        font-size:.95rem;
+    }
+
+    .product-price{
+        font-size:.95rem;
+    }
+
+    .product-btn{
+        padding:10px;
+        font-size:.85rem;
+    }
+
+    .category-btn{
+        font-size:.85rem;
+        padding:10px 15px;
+    }
+
+}

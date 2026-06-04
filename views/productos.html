@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/productos.css" />
+	<link rel="icon" href="/images/imgLogo/logoCharvelaes.jpg" type="image/x-icon">
+</head>
+<body>
+
+<header class="header">
+    <nav class="navbar">
+
+        <!-- Hamburguesa -->
+        <button class="menu-toggle">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+
+        <!-- Menú -->
+        <div class="right-section">
+
+            <ul class="menu">
+                <li><a href="/index.html">Inicio</a></li>
+                <li><a href="#">Productos</a></li>
+                <li><a href="quienesSomos.html">Quiénes Somos</a></li>
+                <li><a href="contactanos.html">Contáctanos</a></li>
+            </ul>
+
+            <div class="nav-actions">
+                <a href="#" class="cart-btn">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <span>0</span>
+                </a>
+
+                <a href="login.html" class="login-btn">
+                    Ingresar
+                </a>
+            </div>
+
+        </div>
+
+        <!-- Logo -->
+        <div class="logo">
+            <img src="/images/imgLogo/logoCharvelaes.jpg" alt="Charvelaes">
+        </div>
+
+    </nav>
+</header>
+
+<!-- ==========================
+     SECCIÓN PRODUCTOS
+========================== -->
+
+<section class="products-section">
+
+    <!-- Título -->
+    <div class="products-header">
+        <h2>Chocolatería</h2>
+    </div>
+
+    <!-- Buscador -->
+    <div class="search-container">
+        <input
+            type="text"
+            placeholder="Buscar productos..."
+        >
+
+        <button type="submit">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+    </div>
+
+    <!-- Categorías -->
+    <div class="categories">
+
+        <button class="category-btn active">
+            Todos
+        </button>
+
+        <button class="category-btn">
+            Bombones
+        </button>
+
+        <button class="category-btn">
+            Trufas
+        </button>
+
+        <button class="category-btn">
+            Chocolate de Mesa
+        </button>
+
+    </div>
+
+    <!-- Grid de productos -->
+    <div class="products-grid">
+
+        <!-- PRODUCTO -->
+        <div class="product-card">
+
+            <span class="offer-badge">
+                ¡Oferta!
+            </span>
+
+            <img
+                src="/images/productos/fresas.jpeg"
+                alt="Bombones surtidos"
+            >
+
+            <h3>
+                Bombones surtidos
+            </h3>
+
+            <p class="product-price">
+                $24.000
+            </p>
+
+            <button class="product-btn">
+                Ver producto
+            </button>
+
+        </div>
+
+        <!-- PRODUCTO -->
+        <div class="product-card">
+
+            <img
+                src="/images/productos/fresas.jpeg"
+                alt="Caja de bombones"
+            >
+
+            <h3>
+                Caja de bombones
+            </h3>
+
+            <p class="product-price">
+                $48.200
+            </p>
+
+            <button class="product-btn">
+                Ver producto
+            </button>
+
+        </div>
+
+        <!-- PRODUCTO -->
+        <div class="product-card">
+
+            <img
+                src="/images/productos/fresas.jpeg"
+                alt="Trufas"
+            >
+
+            <h3>
+                Trufas Café Irlandés
+            </h3>
+
+            <p class="product-price">
+                $20.600
+            </p>
+
+            <button class="product-btn">
+                Ver producto
+            </button>
+
+        </div>
+
+        <!-- PRODUCTO -->
+        <div class="product-card">
+
+            <img
+                src="/images/productos/fresas.jpeg"
+                alt="Chocolate"
+            >
+
+            <h3>
+                Trufas x3
+            </h3>
+
+            <p class="product-price">
+                $19.600
+            </p>
+
+            <button class="product-btn">
+                Ver producto
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<footer class="footer">
+		<div class="container container-footer">
+			<div class="menu-footer">
+				<div class="contact-info">
+					<p class="title-footer">Información de Contacto</p>
+					<ul>
+						<li>Visítanos en Santa Fe de Antioquia</li>
+						<li>Teléfono: 123-456-7890</li>
+						<li>EmaiL: </li>
+					</ul>
+					<div class="social-icons">
+						<span class="facebook">
+							<i class="fa-brands fa-facebook-f"></i>
+						</span>
+						<a href="https://www.instagram.com/chococharvelaes/">
+						<span class="instagram">
+							<i class="fa-brands fa-instagram"></i>
+						</span>
+						</a>					
+						<span class="whatsapp">
+							<i class="fa-brands fa-whatsapp"></i>
+						</span>
+					</div>
+				</div>
+				<div class="information">
+					<p class="title-footer">Información</p>
+    					<ul>
+							<li><a href="#">Sobre Nosotros</a></li>						
+							<li><a href="#">Politicas de Privacidad</a></li>
+							<li><a href="#">Términos y condiciones</a></li>
+							<li><a href="contactanos.html">Contactános</a></li>
+						</ul>
+					</div>
+					<div class="copyright2">
+					<img src="/images/imgLogo/logoCharvelaes.jpg" alt="Pagos">
+				</div>
+				</div>
+				<div class="copyright">
+					<p>
+						Charvelaes &copy; 2026
+					</p>
+				</div>
+		</div>
+</footer>
+
+
+
+        <script src="https://kit.fontawesome.com/de0f57d1ae.js" crossorigin="anonymous"></script>
+
+		<script>
+			const menuToggle = document.querySelector('.menu-toggle');
+			const rightSection = document.querySelector('.right-section');
+
+			menuToggle.addEventListener('click', () => {	
+    		rightSection.classList.toggle('active');});
+		</script>
+    
+</body>
+</html>
